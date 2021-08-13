@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание NKH Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="main__module">
+                <h1 class="h1">Сетка каталога, состоящая из 4х колонок и 2х рядов с помощью flex</h1>
+                <div class="grid grid-flex grid--bg">
+                    <div class="grid__item grid__item--pink"><span class="grid__num">1</span></div>
+                    <div class="grid__item grid__item--pink"><span class="grid__num">2</span></div>
+                    <div class="grid__item grid__item--pink"><span class="grid__num">3</span></div>
+                    <div class="grid__item grid__item--pink"><span class="grid__num">4</span></div>
+                    <div class="grid__item grid__item--pink"><span class="grid__num">5</span></div>
+                    <div class="grid__item grid__item--pink"><span class="grid__num">6</span></div>
+                    <div class="grid__item grid__item--pink grid__item--small"><span class="grid__num">7</span></div>
+                    <div class="grid__item grid__item--pink"><span class="grid__num">8</span></div>
+                </div>
+                <p>Флексовые элементы занимают не всю ширину, чтобы продемонстрировать выравнивание рядов flex-end (пунт 4 ТЗ).</p>
+            </div>
+            <div class="main__module">
+                <h2 class="h2"> Сетка каталога, состоящая из 4х колонок и 2х рядов с помощью inline-block</h2>
+                <div class="grid grid-inline-block">
+                    <div class="grid__item grid__item--green"><span class="grid__num">1</span></div>
+                    <div class="grid__item grid__item--green"><span class="grid__num">2</span></div>
+                    <div class="grid__item grid__item--green"><span class="grid__num">3</span></div>
+                    <div class="grid__item grid__item--green"><span class="grid__num">4</span></div>
+                    <div class="grid__item grid__item--green"><span class="grid__num">5</span></div>
+                    <div class="grid__item grid__item--green"><span class="grid__num">6</span></div>
+                    <div class="grid__item grid__item--green grid__item--small"><span class="grid__num">7</span></div>
+                    <div class="grid__item grid__item--green"><span class="grid__num">8</span></div>
+                </div>
+            </div>
+            <div class="main__module">
+                <h2 class="h2">Сетка каталога, состоящая из 4х колонок и 2х рядов с помощью float</h2>
+                <div class="grid grid-float clearfix">
+                    <div class="grid__item grid__item--blue"><span class="grid__num">1</span></div>
+                    <div class="grid__item grid__item--blue"><span class="grid__num">2</span></div>
+                    <div class="grid__item grid__item--blue"><span class="grid__num">3</span></div>
+                    <div class="grid__item grid__item--blue"><span class="grid__num">4</span></div>
+                    <div class="grid__item grid__item--blue"><span class="grid__num">5</span></div>
+                    <div class="grid__item grid__item--blue"><span class="grid__num">6</span></div>
+                    <div class="grid__item grid__item--blue grid__item--small"><span class="grid__num">7</span></div>
+                    <div class="grid__item grid__item--blue"><span class="grid__num">8</span></div>
+                </div>
+            </div>
+            <div class="main__module">
+                <h2 class="h2">HTML таблица из 2х рядов и 4х ячеек</h2>
+                <table class="grid grid-table">
+                    <tr>
+                        <td class="grid__item grid__item--lilac"><span class="grid__num">1</span></td>
+                        <td class="grid__item grid__item--lilac"><span class="grid__num">2</span></td>
+                        <td class="grid__item grid__item--lilac"><span class="grid__num">3</span></td>
+                        <td class="grid__item grid__item--lilac"><span class="grid__num">4</span></td>
+                    </tr>
+                    <tr>
+                        <td class="grid__item grid__item--lilac"><span class="grid__num">5</span></td>
+                        <td class="grid__item grid__item--lilac"><span class="grid__num">6</span></td>
+                        <td class="grid__item grid__item--lilac"><span class="grid__num">7</span></td>
+                        <td class="grid__item grid__item--lilac"><span class="grid__num">8</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="main__module">
+                <h2 class="h2">Таблица из 2х рядов и 4х ячеек, используя для разметки только div</h2>
+                <div class="grid grid-div-table">
+                    <div class="grid__row">
+                        <div class="grid__item grid__item--yellow"><span class="grid__num">1</span></div>
+                        <div class="grid__item grid__item--yellow"><span class="grid__num">2</span></div>
+                        <div class="grid__item grid__item--yellow"><span class="grid__num">3</span></div>
+                        <div class="grid__item grid__item--yellow"><span class="grid__num">4</span></div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__item grid__item--yellow"><span class="grid__num">5</span></div>
+                        <div class="grid__item grid__item--yellow"><span class="grid__num">6</span></div>
+                        <div class="grid__item grid__item--yellow"><span class="grid__num">7</span></div>
+                        <div class="grid__item grid__item--yellow"><span class="grid__num">8</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__module">
+                <h2 class="h2">Аккордеон</h2>
+                <div class="grid grid-accordion">
+                    <div class="grid__item grid__item--pink">
+                        <button type="button" class="grid__num grid__btn js-accordion">Click me!</button>
+                        <div class="grid__content js-grid-content">
+                            <p class="grid__content-txt">Привет! Меня зовут Борис, я &mdash; начинающий фронтендер.</p>
+                        </div>
+                    </div>
+                    <div class="grid__item grid__item--green">
+                        <button type="button" class="grid__num grid__btn js-accordion">Click me!</button>
+                        <div class="grid__content js-grid-content">
+                            <p class="grid__content-txt">Сегодня я бился, как лев, над вашим тестовым заданием.</p>
+                        </div>
+                    </div>
+                    <div class="grid__item grid__item--blue">
+                        <button type="button" class="grid__num grid__btn js-accordion">Click me!</button>
+                        <div class="grid__content js-grid-content">
+                            <p class="grid__content-txt">На задачах по стилизации сетки флоатами и таблицы с помощью дивов пришлось порыться в <span class="line-through">закромах памяти</span> Гугле :)</p>
+                        </div>
+                    </div>
+                    <div class="grid__item grid__item--lilac">
+                        <button type="button" class="grid__num grid__btn js-accordion">Click me!</button>
+                        <div class="grid__content js-grid-content">
+                            <p class="grid__content-txt">Надеюсь моя работа вас впечатлит так же, как меня впечатлил ваш сайт!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
