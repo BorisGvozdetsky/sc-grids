@@ -58,6 +58,10 @@ body {
   flex-direction: row-reverse;
   justify-content: flex-end; }
 
+.grid-inline-block {
+  font-size: 0;
+  line-height: 0; }
+
 .grid-table {
   width: calc(100% + 20px);
   margin: 0 -10px;
@@ -86,8 +90,6 @@ body {
     align-items: center;
     width: calc(24% - 20px); }
   .grid-inline-block .grid__item {
-    font-size: 0;
-    line-height: 0;
     display: inline-block;
     vertical-align: top;
     text-align: center;
